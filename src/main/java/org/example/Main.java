@@ -1,8 +1,11 @@
 package org.example;
 
+import org.example.day3task.LargestElement;
 import org.example.day3task.PrimeChecker;
 import org.example.day3task.SumDigits;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -26,5 +29,22 @@ public class Main {
         PrimeChecker test2 = new PrimeChecker();
 
         test2.checkPrime(Integer.parseInt(primeInput));
+        // DAY 3 - Task 3
+
+        System.out.println("Enter Number multiple time & press 'c' to calculate");
+        List<Integer> numbers= new ArrayList<Integer>();
+        while (inputUser.hasNextInt()){
+            numbers.add(inputUser.nextInt());
+            System.out.println("The array:"+ numbers.toString());
+        }
+
+        LargestElement test3 = new LargestElement(numbers);
+        test3.findLargest();
+
+
+        // Day 3 - task 4
+
+
+
     }
 }
