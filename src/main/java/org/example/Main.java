@@ -66,5 +66,13 @@ public class Main {
 
         //Day3 - task 7
 
+        String vowelInput = "aiueowwww";
+
+        VowelCheck test7 = new VowelCheck(vowelInput);
+
+        test7.countVowel();
+
+        //Day3 - task 8
+
     }
 }
