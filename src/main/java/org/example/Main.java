@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.day3task.LargestElement;
-import org.example.day3task.PrimeChecker;
-import org.example.day3task.SimpleCalc;
-import org.example.day3task.SumDigits;
+import org.example.day3task.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +48,23 @@ public class Main {
         SimpleCalc test4= new SimpleCalc(calcInput);
         test4.calculateInput();
 
+        //Day 3 - task 5
+        String reverseInput = "ayam";
 
+
+        ReverseString test5 = new ReverseString(reverseInput);
+
+        test5.reverseString();
+
+        //Day3 - task 6
+
+        int input6 = 8;
+
+        Fibonacci test6 = new Fibonacci(input6);
+
+        test6.FibonacciMaker();
+
+        //Day3 - task 7
 
     }
 }
