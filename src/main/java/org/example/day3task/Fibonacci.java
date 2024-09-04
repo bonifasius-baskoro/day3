@@ -26,7 +26,7 @@ public class Fibonacci {
                 index++;
             }
         }
-        System.out.println(fibonacciList.toString());
+        System.out.println("The fibonacci list: " + fibonacciList.toString());
 
     }
 }

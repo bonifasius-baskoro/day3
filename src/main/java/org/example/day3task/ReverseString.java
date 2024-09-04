@@ -13,7 +13,7 @@ public class ReverseString {
         for (int i = this.inputString.length()-1 ; i >= 0 ; i--){
             reversedString.append(this.inputString.charAt(i));
         }
-        System.out.println(reversedString);
+        System.out.println("Reversed String: " + reversedString);
 
     }
 }

@@ -40,7 +40,7 @@ public class Main {
         LargestElement test3 = new LargestElement(numbers);
         test3.findLargest();
 
-
+        //Can't use user input after the line above
         // Day 3 - task 4
 
         String calcInput = "5+2";
@@ -73,6 +73,37 @@ public class Main {
         test7.countVowel();
 
         //Day3 - task 8
+
+        ArrayList<Integer> arrayTest8 = new ArrayList<Integer>();
+        arrayTest8.add(3);
+        arrayTest8.add(12);
+        arrayTest8.add(5);
+        arrayTest8.add(7);
+//        System.out.println( arrayTest8);
+
+        BubbleSort test8 = new BubbleSort(arrayTest8);
+        test8.sortArray();
+
+        //Day3 - task 9
+        String inputString1="ayam";
+        String inputString2= "maya";
+
+        Anagram test9 = new Anagram(inputString1,inputString2);
+        test9.checkAnagram();
+
+        //Day3 - task10
+
+        ArrayList<Integer> arrayTest10 = new ArrayList<Integer>();
+        arrayTest10.add(3);
+        arrayTest10.add(12);
+        arrayTest10.add(5);
+        arrayTest10.add(7);
+
+        BubbleSort test10 = new BubbleSort(arrayTest10);
+        System.out.println("The second biggest element : " + test10.sortArray().get(arrayTest10.size()-2));
+
+
+
 
     }
 }
