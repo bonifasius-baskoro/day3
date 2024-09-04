@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.day3task.LargestElement;
 import org.example.day3task.PrimeChecker;
+import org.example.day3task.SimpleCalc;
 import org.example.day3task.SumDigits;
 
 import java.util.ArrayList;
@@ -33,16 +34,22 @@ public class Main {
 
         System.out.println("Enter Number multiple time & press 'c' to calculate");
         List<Integer> numbers= new ArrayList<Integer>();
-        while (inputUser.hasNextInt()){
+        while (inputUser.hasNextInt() ){
             numbers.add(inputUser.nextInt());
             System.out.println("The array:"+ numbers.toString());
         }
+
 
         LargestElement test3 = new LargestElement(numbers);
         test3.findLargest();
 
 
         // Day 3 - task 4
+
+        String calcInput = "5+2";
+
+        SimpleCalc test4= new SimpleCalc(calcInput);
+        test4.calculateInput();
 
 
 

@@ -13,8 +13,9 @@ public class LargestElement {
         int large =0;
 
         for(int i = 0 ; i < inputList.size();i++){
-            if(i>large){
+            if(this.inputList.get(i)>large){
                 large = this.inputList.get(i);
+
             }
         }
         System.out.println("The largest number from array is : " + large);
